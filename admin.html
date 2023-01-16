@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="jquery-3.3.1.js"></script>
-<script src="index.js"></script>
+<script src="admin.js"></script>
 
 <!-- Style Dropdoen menu -->
 <style>
@@ -62,15 +62,13 @@ img {
 
 </style>
 
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
 
 
-<script>
- </script>
-
-<script>
- </script>
-
-   
 </head>
 
 
@@ -113,11 +111,27 @@ window.onclick = function(event) {
 }
 </script>
 
-
-
 <br>
 <br>
 
+<button id="CTCButton" onclick="CreateTableContributions()">Create Table Contributions</button>
+<button id="SearchButton" onclick="mySearch()">Search</button><br><br>
+  
+<br><br>
+<h1> Table Contributions </h1>
+<table id="TableContributions">
+<tr>
+    <th>School Year</th>
+    <th>Scholarship Funds</th>
+    <th>Total Student Fees </th>
+	<th>Pct Paid By Scholarship</th>
+    <th>Total Students</th>
+    <th>Ex Rate 1 USD</th>
+	 <th>UGS</th>
+    <th>USD Funds</th>
+	<th>UGS</th>
+	  </tr>
+</table?
 <br>
 
 

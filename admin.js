@@ -6,43 +6,82 @@
 */
 
 /*
-School Year	Scholarship Funds	Total Student Fees 	Pct Paid By Scholarship	Total Students		
-2023	        1000	            4700	                  21	              9		        
+School Year	Scholarship Funds	Total Student Fees 	Pct Paid By Scholarship			
+2023	        1000	            4700	                  21	              		        
 
-Ex Rate USD	     UGS	USD Funds	UGS
-      1	        3657	  1000	    3657000
+Total Students   Ex Rate USD	     UGS	USD Funds	UGS
+     9                 1	        3657	  1000	    3657000
 */
 
-function createTableContributions(){
-  var x = document.createElement("TBODY");
-      var y = document.createElement("TR");
-   var z1 = document.createElement("TD");
- var z2 = document.createElement("TD");
-  var z3 = document.createElement("TD");
-   var z4 = document.createElement("TD");
-    var z5 = document.createElement("TD");
-	 var z6 = document.createElement("TD");
-	 var z7 = document.createElement("TD");
-	 var z8 = document.createElement("TD");
-  z1.innerHTML = (nuid);
- z2.innerHTML = (fn);
- z3.innerHTML = (mn);
- z4.innerHTML = (man);
- z5.innerHTML = (ln);
- z6.innerHTML = (nn);
- z7.innerHTML = (city);
- z8.innerHTML = (state);
+
+
+function CreateTableTest1() {
+  var x = document.createElement("TABLE");
+  x.setAttribute("id", "myTable");
+  document.body.appendChild(x);
+
+  var y = document.createElement("TR");
+  y.setAttribute("id", "myTr");
+  document.getElementById("myTable").appendChild(y);
+
+  var z = document.createElement("TD");
+  var t = document.createTextNode("cell");
+  z.appendChild(t);
+  document.getElementById("myTr").appendChild(z);
+}
+
+
+function CreateTableContributions(){
+	//Set var values manually here
+	var SchoolYearVar = "2023"
+	var ScholarshipFundsVar = 1000
+	var TotalStudentFeesVar = 4700
+	var PctPaidByScholarshipVar = 21
+	var TotalStudentsVar = 9
+	var ExRateUSDVar = 1
+	var ExRateUGSVar = 3657
+	var USDFundsVar = 1000
+	var UGSFundsVar = 3657000
+	
+	
+	
+	
+  var TableBody = document.createElement("TBODY");
+  var TableHeader = document.createElement("THeader");
+      var TRow = document.createElement("TR");
+   var SchoolYear = document.createElement("TD");
+ var ScholarshipFunds = document.createElement("TD");
+  var TotalStudentFees = document.createElement("TD");
+   var PctPaidByScholarship = document.createElement("TD");
+    var TotalStudents = document.createElement("TD");
+	 var ExRateUSD = document.createElement("TD");
+	 var ExRateUGS = document.createElement("TD");
+	 var USDFunds = document.createElement("TD");
+	 var UGSFunds = document.createElement("TD");
+	 
+  SchoolYear.innerHTML = (SchoolYearVar);
+ ScholarshipFunds.innerHTML = (ScholarshipFundsVar);
+ TotalStudentFees.innerHTML = (TotalStudentFeesVar);
+ PctPaidByScholarship.innerHTML = (PctPaidByScholarshipVar);
+ TotalStudents.innerHTML = (TotalStudentsVar);
+ ExRateUSD.innerHTML = (ExRateUSDVar);
+ ExRateUGS.innerHTML = (ExRateUGSVar);
+ USDFunds.innerHTML = (USDFundsVar);
+ UGSFunds.innerHTML = (UGSFundsVar);
  
-  y.appendChild(z1);
-    y.appendChild(z2);
-	y.appendChild(z3);
-	y.appendChild(z4);
-	y.appendChild(z5);
-	y.appendChild(z6);
-	y.appendChild(z7);
-	y.appendChild(z8);
-  x.appendChild(y);
-  document.getElementById("myTable").appendChild(x);
+ 
+  TRow.appendChild(SchoolYear);
+    TRow.appendChild(ScholarshipFunds);
+	TRow.appendChild(TotalStudentFees);
+	TRow.appendChild(PctPaidByScholarship);
+	TRow.appendChild(TotalStudents);
+	TRow.appendChild(ExRateUSD);
+	TRow.appendChild(ExRateUGS);
+	TRow.appendChild(USDFunds);
+	TRow.appendChild(UGSFunds);
+	
+  TableBody.appendChild(TRow);
+  document.getElementById("TableContributions").appendChild(TableBody);
   
    var para = document.createElement("p");
 var node = document.createTextNode("Click on family member's name for details.");
