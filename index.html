@@ -52,6 +52,7 @@
 <style>
 table, th, td {
   border: 1px solid black;
+   text-align: center;
 }
 
 .centertable{
@@ -131,9 +132,76 @@ window.onclick = function(event) {
 	</div>
 	</div>
 <br>
-
-<table class="centertable" id="tableManual" style="width:500px">
+<h1 class="centertext">UGS Distributions Table</h1>
+<table class="centertable" id="tabledistributionsugs" style="width:500px">
+ <tr>
+    <th style="width:5%">School Year</th>
+    <th style="width:5%">Grade Level</th>
+    <th style="width:5%">Avg Yearly Fee</th>
+	<th style="width:5%">Number of Students</th>
+    <th style="width:5%">Total Fees</th>
+    <th style="width:5%">Amt Paid By Scholarship</th>
+	<th style="width:5%">Amt Given To Each Student This Year</th>
+    <th style="width:5%">Amt Given To Each Student This Year Each Term</th>
+	
+  </tr>
   <tr>
+    <td>2023</td>
+    <td>Kindegarden</td>
+    <td>1097100</td>
+	<td>2</td>
+    <td>2194200</td>
+    <td>466851</td>
+	<td>233426</td>
+    <td>77809</td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>Primary</td>
+    <td>1828500</td>
+	<td>5</td>
+    <td>9142500</td>
+    <td>1945213</td>
+	<td>389043</td>
+    <td>129681</td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>Secondary</td>
+    <td>2925600</td>
+	<td>2</td>
+    <td>5851200</td>
+    <td>1244936</td>
+	<td>622468</td>
+    <td>207489</td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>University</td>
+    <td>3657000</td>
+	<td>0</td>
+    <td>0</td>
+    <td>0</td>
+	<td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Totals</td>
+	<td>9</td>
+    <td>17187900</td>
+    <td>3657000</td>
+	<td>1244936</td>
+    <td>414979</td>
+  </tr>
+</table>
+<br>
+
+<br>
+<!--<h1 class="centertext">USD Distributions Table</h1>-->
+<table class="centertable" id="tabledistributionsusd" style="width:500px">
+ <tr>
     <th style="width:5%">School Year</th>
     <th style="width:5%">Grade Level</th>
     <th style="width:5%">Avg Yearly Fee</th>
@@ -184,12 +252,23 @@ window.onclick = function(event) {
 	<td>0</td>
     <td>0</td>
   </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Totals</td>
+	<td>9</td>
+    <td>4700</td>
+    <td>1000</td>
+	<td>340</td>
+    <td>113</td>
+  </tr>
 </table>
-<br>
 
-<p>
-	
-</p>
+<script>
+document.getElementById("tabledistributionsusd").style.visibility = "hidden";
+</script>
+
+<br>
 
 </body>
 </html>
