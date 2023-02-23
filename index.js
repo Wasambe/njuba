@@ -13,6 +13,49 @@ Ex Rate USD	     UGS	USD Funds	UGS
       1	        3657	  1000	    3657000
 */
 
+
+
+function addClickTableStudents(){
+   var table = document.getElementById('tablestudents');
+    var rows = table.getElementsByTagName('tr');
+
+    for (var i = 0; i < rows.length; i++) {
+        // Take each cell
+     var row = rows[i];
+        // do something on onclick event for cell
+     row.onclick = function () {
+	               // Get the row id where the cell exists
+			rowIndex=(this.rowIndex);
+			if (rowIndex==0){
+			return;
+			}
+			//alert(rowIndex);
+			StudentName = (this.cells[0].innerHTML);
+			School = (this.cells[1].innerHTML);
+			GradeLevel = (this.cells[2].innerHTML);
+			photoname = (StudentName);
+			photoname = photoname.toLowerCase();
+			 photoname = photoname.split(" ").join("");
+			
+			//photoname = "nakateaisha";
+	var urlvar = "";
+	urlvar = ("images/" + photoname + ".jpg");
+	 document.getElementById("imageholder").src = urlvar;
+	     				       }
+							   }
+							   }
+
+
+
+function showStudentPhoto(){
+	
+		}
+		
+	
+
+
+
+
 function createTableContributions(){
   var x = document.createElement("TBODY");
       var y = document.createElement("TR");
@@ -362,8 +405,7 @@ myDiv.id=("myDIV");
 							   }
 	
 
-
-
+	
 function rowIndex(){
  var table = document.getElementById("myTable");
                 for(var i = 0; i < table.rows.length; i++)   {

@@ -5,6 +5,7 @@
 <script src="jquery-3.3.1.js"></script>
 <script src="index.js"></script>
 
+
 <!-- Style Dropdoen menu -->
 <style>
 .dropbtn {
@@ -108,6 +109,7 @@ window.onclick = function(event) {
 <h1 class="centertext">Welcome to the Deborah Njuba / Ruth Wilson Scholarship Homepage</h1>
 <p class="centertext">Please explore and enjoy</p>
 
+
 <br>
 <br>
 
@@ -132,10 +134,11 @@ window.onclick = function(event) {
 	</div>
 	</div>
 	
-						
+	
 
 	<br>
 <h1 class="centertext">Students Table 2023 Term 1</h1>
+<h2 class="centertext">***Click on student name to see photo***</h2>
 <table class="centertable" id="tablestudents" style="width:500px">
  <tr>
     <th style="width:150px">Student Name</th>
@@ -145,7 +148,7 @@ window.onclick = function(event) {
     <!-- <th style="width:5%">Comments</th> -->
 	  </tr>
 	  <tr>
-	  <td>Luka</td>
+	  <td>Luka Juma Ssemanda</td>
 	  <td>School Name</td>
 	  <td>Kindegarden</td>
 	  </tr>
@@ -190,14 +193,22 @@ window.onclick = function(event) {
 	  <td>Secondary</td>
 	  </tr>
   </table>
-	
+  
+  <br>
+ 
 
+	
+<!-- Start Script addClickTableStudents -->
+<script>
+const element = document.getElementById("tablestudents");
+element.addEventListener("click", addClickTableStudents);
+</script>
+<!-- End Script addClickTableStudents -->
 
 	
-		
-
-		
-	
+<!-- Start Script ShowStudentPhoto -->
+<img id="imageholder" class="center" src="" alt="Photo Not Available"/>
+<!-- End Script ShowStudentPhoto -->	
 	
 <br>
 <!-- <h1 class="centertext">UGS Distributions Table</h1> -->
@@ -338,6 +349,8 @@ document.getElementById("tabledistributionsugs").style.visibility = "hidden";
 </script>
 
 <br>
+
+
 
 </body>
 </html>
