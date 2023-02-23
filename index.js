@@ -39,8 +39,9 @@ function addClickTableStudents(){
 			
 			//photoname = "nakateaisha";
 	var urlvar = "";
-	urlvar = ("images/" + photoname + ".jpg");
-	 document.getElementById("imageholder").src = urlvar;
+	// this url will not load on Server***  urlvar = ("images/" + photoname + ".jpg");
+urlvar = (photoname + ".jpg");
+		 document.getElementById("imageholder").src = urlvar;
 	     				       }
 							   }
 							   }
