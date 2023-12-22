@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery-3.3.1.js"></script>
+<script src="index.js"></script>
+
+<style>
+</style>
+
+
+
+<!-- Style Dropdown menu -->
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+
+<!--
+.dropdown {
+   display: inline-block;
+  position: relative;
+}
+-->
+
+.dropdown {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+<!-- Style Dropdown menu -->
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+   text-align: center;
+}
+
+.centertable{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.centertext {
+ text-align: center;
+}
+
+</style>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+   
+</head>
+
+
+<body>
+
+<!--Comment HTML-->
+<h1 class="centertext">In Their Own Words</h1>
+
+<br>
+<br>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+	 <a href="contact.html">Contact</a>
+	 <a href="intheirownwords.html">In their own words</a>
+	 <a onclick="openformstudenttable()">Students Tables</a>
+   
+	<!--<a href="admin.html">Admin</a> -->
+	</div>
+</div>
+
+
+<br>
+<br>
+<div class="aidah">
+In the words of Aidah
+<br>
+This is a very big platform for not only our children who have got an opportunity to study and to us the parents who have been given a very big helping hand but also to our late mother who passed away in such an unexpected manner.
+She was a great grandmother who loved her grandkids and always made sure they were well and attended school and would always go an extra mile to pay their school dues.When she passed,we were so worried about their studies but thanks to this scholarship,they have not lacked.We pray for the hands that provide to continuously be blessed.lt is because of this scholarship that the grandkids have not been scattered around but continue to stay together.As the saying goes "At the end of the tunnel,is light" so we thought with grandmother gone it was the end.But through the scholarship we have seen the light.May the souls of the late Ruth Wilson and the late Deborah Lugyawo Njuba our beloved parents continue resting in peace for through them we unite.
+</div>
+
+
+</body>
+</html>
