@@ -6,7 +6,65 @@
 <script src="index.js"></script>
 
 
-<!-- Style Dropdoen menu -->
+<!-- Start Ori CSS 22 Dec 2023 -->
+<!-- Style test to center text to know where center of page is located 
+<style>
+div.a {
+text-align: center;
+}
+
+<!-- Style Images
+.column {
+float: left;
+width: 33%;
+}
+
+@media screen and (max-width: 500px) {
+.column {
+width: 100%;
+}
+
+
+.imgrow::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.imgrow {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+<!-- Ori img style    
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.centervertical {
+margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   border: 3px solid green;
+  }
+
+.centerhorizontal {
+  padding: 10px 0;
+  border: 3px solid green;
+  text-align: center;
+  }
+<!-- end Ori CSS 22 Dec 2023 -->
+
+
+
+
+<!-- Style Dropdown menu -->
 <style>
 .dropbtn {
   background-color: #3498DB;
@@ -15,16 +73,26 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
-}
+  }
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #2980B9;
 }
 
+
+<!--
 .dropdown {
+   display: inline-block;
   position: relative;
-  display: inline-block;
 }
+-->
+
+.dropdown {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 
 .dropdown-content {
   display: none;
@@ -46,11 +114,9 @@
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-</style>
-<!-- Style Dropdoen menu -->
+<!-- Style Dropdown menu -->
 
 
-<style>
 table, th, td {
   border: 1px solid black;
    text-align: center;
@@ -61,15 +127,42 @@ table, th, td {
   margin-right: auto;
 }
 
-img {
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
+
 
 .centertext {
  text-align: center;
+}
+
+</style>
+
+
+
+<!-- Style imgrow -->
+<style>
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  /*padding: 5px;*/
+}
+
+
+.centerhorizontal {
+  padding: 10px 0;
+  /* border: 3px solid green; */
+  text-align: center;
+  }
+
+/* Clear floats after image containers */
+.imgrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+.column {
+width: 100%;
 }
 
 </style>
@@ -118,26 +211,53 @@ window.onclick = function(event) {
   <div id="myDropdown" class="dropdown-content">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+	 <a href="contact.html">Contact</a>
+	 <a onclick="openformstudenttable()">Students Tables</a>
+   
 	<!--<a href="admin.html">Admin</a> -->
 	</div>
 </div>
 
+<br>
+
+<div class="a">
+<h1></h1>
+</div
 
 <br>
 <br>
-<div class="row"> 
-  <div class="column" class="center">
-    <img src="images\deborahnjuba.jpg">
-    
+
+<div class="imgrow">
+  <div class="column">
+   <div class="centerhorizontal">
+    <img src="images\deborahnjuba.jpg" alt="DNImg" style="width:50%">
+	</div>
+  </div>
+  <div class="column">
+  <div class="centerhorizontal">
+      <img src="images\heartcropped.jpg" alt="Loves" style="width:20%">
+	  </div>
+  </div>
+  <div class="column">
+  <div class="centerhorizontal">
+    <img src="images\ruthwilson.jpg" alt="RWImg" style="width:50%">
+	</div>
+  </div>
+</div>
+
+<!--Ori div class="imgrow"
+<div class="imgrow"> 
+  <div class="column">
+      <img src="images\deborahnjuba.jpg">
+    <img src="images\heartcropped.jpg">
     <img src="images\ruthwilson.jpg">
+	 </div>
 	</div>
-	</div>
+	-->
 	
 	
-
+<br>
 	<br>
-<h1 class="centertext">Students Table 2023 Term 1</h1>
 <h2 class="centertext">***Click on student name to see photo***</h2>
 
 	
@@ -145,14 +265,93 @@ window.onclick = function(event) {
 <img id="imageholder" class="center" src="" alt=""/>
 <!-- End Script ShowStudentPhoto -->	
 	<br>
+	
+	
+	<div id="Njuba Scholarship For Grandchildren1.2_17490" align=center
+x:publishsource="Excel">
+
+<h1 style='color:black;font-family:Calibri;font-size:14.0pt;font-weight:800;
+font-style:normal'>Student List</h1>
+
+<!-- <table class="centertable" id="tablestudents" style="width:500px"> -->
+<table id="tablestudents" border=0 cellpadding=0 cellspacing=0 width=427 class=xl6317490
+ style='border-collapse:collapse;table-layout:fixed;width:321pt'>
+ <col class=xl6317490 width=148 style='mso-width-source:userset;mso-width-alt:
+ 5412;width:111pt'>
+ <col class=xl6317490 width=193 style='mso-width-source:userset;mso-width-alt:
+ 7058;width:145pt'>
+ <col class=xl6317490 width=86 style='mso-width-source:userset;mso-width-alt:
+ 3145;width:65pt'>
+ <tr class=xl6417490 height=20 style='height:15.0pt'>
+  <td height=20 class=xl6417490 width=148 style='height:15.0pt;width:111pt'>Student
+  Name</td>
+  <td class=xl6417490 width=193 style='width:145pt'>School</td>
+  <td class=xl6417490 width=86 style='width:65pt'>Grade Level</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Aisha Nakate</td>
+  <td class=xl6517490>Lake View Secondary</td>
+  <td class=xl6317490>Secondary</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Divine Wanyaga</td>
+  <td class=xl6517490>Apex Junior</td>
+  <td class=xl6317490>Primary</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Eshaal Nakabugo</td>
+  <td class=xl6517490>Van Junior</td>
+  <td class=xl6317490>Kindegarden</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Luka Juma Ssemanda</td>
+  <td class=xl6517490>Van Junior</td>
+  <td class=xl6317490>Kindegarden</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Samsha Nakabuubi</td>
+  <td class=xl6517490>Apex Junior</td>
+  <td class=xl6317490>Primary</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Shakira Nakate</td>
+  <td class=xl6517490>Buganda Road Primary</td>
+  <td class=xl6317490>Primary</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Victor Stanley Warola</td>
+  <td class=xl6517490>St Henry College</td>
+  <td class=xl6317490>Secondary</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Yahaya Semanda</td>
+  <td class=xl6517490>Apex Junior</td>
+  <td class=xl6317490>Primary</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6317490 style='height:15.0pt'>Zamzam Nampija</td>
+  <td class=xl6517490>Mpigi Primary</td>
+  <td class=xl6317490>Primary</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=148 style='width:111pt'></td>
+  <td width=193 style='width:145pt'></td>
+  <td width=86 style='width:65pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+
+<!-- Old tablestudents 
 <table class="centertable" id="tablestudents" style="width:500px">
  <tr>
     <th style="width:150px">Student Name</th>
     <th style="width:150px">School</th>
     <th style="width:150px">Grade Level</th>
-	<!-- <th style="width:5%">Guardian</th> -->
-    <!-- <th style="width:5%">Comments</th> -->
-	  </tr>
+		  </tr>
 	  <tr>
 	  <td>Luka Juma Ssemanda</td>
 	  <td>School Name</td>
@@ -199,7 +398,7 @@ window.onclick = function(event) {
 	  <td>Secondary</td>
 	  </tr>
   </table>
-  
+  -->
   <br>
  
 
@@ -213,146 +412,9 @@ element.addEventListener("click", addClickTableStudents);
 
 
 <br>
-<!-- <h1 class="centertext">UGS Distributions Table</h1> -->
-<table class="centertable" id="tabledistributionsugs" style="width:500px">
- <tr>
-    <th style="width:5%">School Year</th>
-    <th style="width:5%">Grade Level</th>
-    <th style="width:5%">Avg Yearly Fee</th>
-	<th style="width:5%">Number of Students</th>
-    <th style="width:5%">Total Fees</th>
-    <th style="width:5%">Amt Paid By Scholarship</th>
-	<th style="width:5%">Amt Given To Each Student This Year</th>
-    <th style="width:5%">Amt Given To Each Student This Year Each Term</th>
-	
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>Kindegarden</td>
-    <td>1097100</td>
-	<td>2</td>
-    <td>2194200</td>
-    <td>466851</td>
-	<td>233426</td>
-    <td>77809</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>Primary</td>
-    <td>1828500</td>
-	<td>5</td>
-    <td>9142500</td>
-    <td>1945213</td>
-	<td>389043</td>
-    <td>129681</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>Secondary</td>
-    <td>2925600</td>
-	<td>2</td>
-    <td>5851200</td>
-    <td>1244936</td>
-	<td>622468</td>
-    <td>207489</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>University</td>
-    <td>3657000</td>
-	<td>0</td>
-    <td>0</td>
-    <td>0</td>
-	<td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td>Totals</td>
-	<td>9</td>
-    <td>17187900</td>
-    <td>3657000</td>
-	<td>1244936</td>
-    <td>414979</td>
-  </tr>
-</table>
+
 <br>
+
  
-<!-- <h1 class="centertext">USD Distributions Table</h1> -->
-<table class="centertable" id="tabledistributionsusd" style="width:500px">
- <tr>
-    <th style="width:5%">School Year</th>
-    <th style="width:5%">Grade Level</th>
-    <th style="width:5%">Avg Yearly Fee</th>
-	<th style="width:5%">Number of Students</th>
-    <th style="width:5%">Total Fees</th>
-    <th style="width:5%">Amt Paid By Scholarship</th>
-	<th style="width:5%">Amt Given To Each Student This Year</th>
-    <th style="width:5%">Amt Given To Each Student This Year Each Term</th>
-	
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>Kindegarden</td>
-    <td>300</td>
-	<td>2</td>
-    <td>600</td>
-    <td>128</td>
-	<td>64</td>
-    <td>21</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>Primary</td>
-    <td>500</td>
-	<td>5</td>
-    <td>2500</td>
-    <td>532</td>
-	<td>106</td>
-    <td>35</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>Secondary</td>
-    <td>800</td>
-	<td>2</td>
-    <td>1600</td>
-    <td>340</td>
-	<td>170</td>
-    <td>57</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>University</td>
-    <td>1000</td>
-	<td>0</td>
-    <td>0</td>
-    <td>0</td>
-	<td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td>Totals</td>
-	<td>9</td>
-    <td>4700</td>
-    <td>1000</td>
-	<td>340</td>
-    <td>113</td>
-  </tr>
-</table>
-
-<script>
-document.getElementById("tabledistributionsusd").style.visibility = "hidden";
-document.getElementById("tabledistributionsugs").style.visibility = "hidden";
-
-</script>
-
-<br>
-
-
-
 </body>
 </html>

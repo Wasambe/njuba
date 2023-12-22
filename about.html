@@ -5,7 +5,12 @@
 <script src="jquery-3.3.1.js"></script>
 <script src="index.js"></script>
 
-<!-- Style Dropdoen menu -->
+<style>
+</style>
+
+
+
+<!-- Style Dropdown menu -->
 <style>
 .dropbtn {
   background-color: #3498DB;
@@ -14,16 +19,26 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
-}
+  }
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #2980B9;
 }
 
+
+<!--
 .dropdown {
+   display: inline-block;
   position: relative;
-  display: inline-block;
 }
+-->
+
+.dropdown {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 
 .dropdown-content {
   display: none;
@@ -46,9 +61,20 @@
 
 .show {display: block;}
 </style>
-<!-- Style Dropdoen menu -->
+<!-- Style Dropdown menu -->
+
 
 <style>
+table, th, td {
+  border: 1px solid black;
+   text-align: center;
+}
+
+.centertable{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
   border-radius: 50%;
   display: block;
@@ -85,7 +111,6 @@ window.onclick = function(event) {
 }
 </script>
 
-
    
 </head>
 
@@ -111,15 +136,5 @@ window.onclick = function(event) {
 
 <br>
 <br>
-<div class="row"> 
-  <div class="column" class="center">
-    <img src="images\deborahnjuba.jpg">
-    
-    <img src="images\ruthwilson.jpg">
-	</div>
-	</div>
-<br>
-
-
 </body>
 </html>
