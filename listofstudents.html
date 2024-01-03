@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery-3.3.1.js"></script>
+<script src="index.js"></script>
+
+
+<!-- Start Ori CSS 22 Dec 2023 -->
+<!-- Style test to center text to know where center of page is located 
+<style>
+div.a {
+text-align: center;
+}
+
+<!-- Style Images
+.column {
+float: left;
+width: 33%;
+}
+
+@media screen and (max-width: 500px) {
+.column {
+width: 100%;
+}
+
+
+.imgrow::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.imgrow {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+<!-- Ori img style    
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.centervertical {
+margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   border: 3px solid green;
+  }
+
+.centerhorizontal {
+  padding: 10px 0;
+  border: 3px solid green;
+  text-align: center;
+  }
+<!-- end Ori CSS 22 Dec 2023 -->
+
+
+
+
+<!-- Style Dropdown menu -->
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+
+<!--
+.dropdown {
+   display: inline-block;
+  position: relative;
+}
+-->
+
+.dropdown {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+<!-- Style Dropdown menu -->
+
+
+table, th, td {
+  border: 1px solid black;
+   text-align: center;
+}
+
+.centertable{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.centertext {
+ text-align: center;
+}
+
+</style>
+
+
+
+<!-- Style imgrow -->
+<style>
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  /*padding: 5px;*/
+}
+
+
+.centerhorizontal {
+  padding: 10px 0;
+  /* border: 3px solid green; */
+  text-align: center;
+  }
+
+/* Clear floats after image containers */
+.imgrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+.column {
+width: 100%;
+}
+
+</style>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+   
+</head>
+
+
+<body>
+
+<!--Comment HTML-->
+<h1 class="centertext">List Of Students</h1>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+	 <a href="contact.html">Contact</a>
+	 <a href="listofstudents.html">List Of Students</a>
+	 <a href="intheirownwords.html">In Their Own Words</a>
+		</div>
+</div>
+
+
+	
+	
+
+<h2 class="centertext">***Click on student name to see photo***</h2>
+
+	
+<!-- Start Script ShowStudentPhoto -->
+<img id="imageholder" class="center" src="" alt=""/>
+<!-- End Script ShowStudentPhoto -->	
+	<br>
+	
+	
+	<div id="Njuba Scholarship For Grandchildren1.2_17490" align=center
+x:publishsource="Excel">
+
+<!-- <table class="centertable" id="tablestudents" style="width:500px"> -->
+<table id="tablestudents" border=0 cellpadding=0 cellspacing=0 width=450
+ style='border-collapse:collapse;table-layout:fixed;width:321pt'>
+ <col class=headerstudentname width=180 >
+ <col class=headerschool width=180 >
+ <col class=headergradelevel width=100 >
+ <col class=headergradelevel width=100 >
+ <tr height=20 >
+  <td>Student Name</td>
+  <td>School</td>
+  <td>Grade Level</td>
+   <td>Status</td>
+ </tr>
+ <tr height=20 >
+  <td>Aisha Nakate</td>
+  <td>Lake View Secondary</td>
+  <td>Secondary</td>
+  <td>Inactive</td>
+ </tr>
+ <tr height=20>
+  <td >Divine Wanyaga</td>
+  <td>Apex Junior</td>
+  <td>Primary</td>
+  <td>Active</td>
+ </tr>
+<tr height=20>
+  <td >Eshaal Nakabugo</td>
+  <td>Van Junior</td>
+  <td>Kindegarden</td>
+  <td>Active</td>
+ </tr>
+  <tr height=20>
+  <td >Hawa Nakate</td>
+  <td>Van Junior</td>
+  <td>Kindegarden</td>
+  <td>Active</td>
+ </tr>
+ <tr height=20>
+  <td >Luka Juma Ssemanda</td>
+  <td>Van Junior</td>
+  <td>Kindegarden</td>
+  <td>Active</td>
+ </tr>
+ <tr height=20>
+  <td >Samsha Nakabuubi</td>
+  <td>Apex Junior</td>
+  <td>Primary</td>
+  <td>Active</td>
+ </tr>
+ <tr height=20>
+  <td >Sophia Joy Nakate</td>
+  <td>Buganda Road Primary</td>
+  <td>Primary</td>
+  <td>Active</td>
+ </tr>
+ <tr height=20>
+  <td >Victor Stanley Warola</td>
+  <td>St Henry College</td>
+  <td>Secondary</td>
+  <td>Active</td>
+ </tr>
+ <tr height=20>
+  <td >Yahaya Semanda</td>
+  <td>Apex Junior</td>
+  <td>Primary</td>
+  <td>Active</td>
+ </tr>
+ <tr height=20>
+  <td >Zamzam Nampija</td>
+  <td>Mpigi Primary</td>
+  <td>Primary</td>
+  <td>Active</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=148 style='width:111pt'></td>
+  <td width=193 style='width:145pt'></td>
+  <td width=86 style='width:65pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+  <br>
+ 
+
+	
+<!-- Start Script addClickTableStudents -->
+<script>
+const element = document.getElementById("tablestudents");
+element.addEventListener("click", addClickTableStudents);
+</script>
+<!-- End Script addClickTableStudents -->
+
+
+<br>
+
+<br>
+
+ 
+</body>
+</html>
